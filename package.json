@@ -1,0 +1,26 @@
+{
+  "name": "branding_portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Datman9001/Portfolio.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Tyronne Calvin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Datman9001/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Datman9001/Portfolio#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "live-server": "^1.2.0"
+  }
+}

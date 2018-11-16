@@ -1,0 +1,87 @@
+footer{
+    background: #eff0f2;
+    padding: 80px 0;
+}
+
+.social-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+   
+}
+
+.social-container a{
+    font-size: 4.5rem;
+    color: #7b7c7e;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    padding: 5px;
+   
+
+}
+
+.social-container a:hover{
+    color: rgb(52, 73, 94);
+    box-shadow: 2px 10px 3px;
+}
+
+footer .f-name{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+
+footer h5{
+    font-size: 3.5rem;
+   
+    text-align: center;
+   margin: 1.5rem 0;
+   text-transform: uppercase;
+   font-weight: 700;
+   letter-spacing: 2px;
+   background-image: linear-gradient(to right, #2c3e50, #7f8c8d);
+   -webkit-background-clip: text;
+   color: transparent;
+   transition: all .2s;
+   display: inline-block;
+    
+   
+  
+}
+
+footer h5:hover{
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem  rgba(0, 0, 0, 0.199);
+}
+
+
+footer p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+/* Media Queries */
+
+/* tablets */
+
+@media only screen and (max-width: 960px) {
+     
+}
+
+/* phones */
+
+@media only screen and (max-width: 767px) {
+    
+}
+

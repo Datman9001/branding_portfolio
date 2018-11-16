@@ -1,0 +1,150 @@
+#top{
+    
+
+}
+#top .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px;
+    align-items: center;
+    
+    
+}
+#top .info{
+    padding: 1.5rem;
+    position: relative;
+    
+
+}
+
+#top .info .blue-square{
+    border: 1.7rem solid #64c0fa;
+    width: 45rem;
+    height: 35.7rem;
+    position: absolute;
+    z-index: 1;
+    top: -8rem;
+    left: -35rem;
+    
+    
+
+}
+
+#top .info h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2.8rem;
+    letter-spacing: .2rem;
+    color: #17181d;
+    margin-bottom: 2rem;
+    z-index: 1;
+    position: relative;
+}
+
+#top .info p{
+    color: #929292;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    margin-bottom: 3rem;
+    z-index: 1;
+    position: relative;
+}
+
+#top .info a{
+    color: #16161e;
+    font-weight: 700;
+    letter-spacing: .124rem;
+    text-decoration: none;
+    font-size: 1.9rem;
+    border-bottom: 2px solid #16161e;
+    padding-bottom: .9rem;
+    text-transform: uppercase;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+
+}
+
+#top .info a:hover .overlay{
+    width: 100%;
+    
+}
+
+.overlay{
+    position: absolute;
+    top: -1rem;
+    left:6rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%; 
+    transition: .5s ease;
+    transform: translate(50%, 50%);
+
+}
+
+#top .img{
+ 
+
+}
+
+#top .img .background-img{
+    background-image: url('/img/pic1.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    height: 800px;
+    border-radius: 10px;
+    box-shadow: 10px 9px 40px -1px rgba(0,0,0,0.75);
+    
+}
+
+ 
+/* Media Queries */
+
+/* tablets */
+
+@media only screen and (max-width: 960px) {
+    /* #top .container{
+        max-width: 760px;
+    } */
+    
+
+    #top .img{
+        width: 500px;
+    }
+}
+
+/* phones */
+
+@media only screen and (max-width: 767px) {
+    #top .container{
+        padding: 0;
+        grid-template-columns: 37% 63%;
+    }
+    #top .img{
+        width: 500px;
+    }
+
+    #top .info .blue-square{
+        display: none;
+    }
+     
+}
+/* smaller phones */
+@media only screen and (max-width: 600px){
+    #top .info a{
+        font-size: .5rem;
+        letter-spacing: 0;
+    } 
+
+    #top .info p{
+        letter-spacing: 0;
+    }
+}
+
+
+

@@ -1,0 +1,211 @@
+.experience{
+    padding: 80px 0;
+}
+
+.experience .large-title{
+    color: #64c0fa;
+    font-weight: 900;
+    font-size: 7rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-bottom: 2.7rem;
+  
+}
+
+.experience-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 2rem;                                                                      
+}
+
+.experience-container .experience-icons .experience-square{
+    border: 30px solid #64c0fa;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    top: -120px;
+    
+}
+
+.experience-container .experience-icons .experience-square .inside-square{
+    background: #64c0fa;
+    width: 150px;
+    height:150px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    
+}
+
+.experience-container .experience-icons .experience-circle{
+    border: 20px solid rgba(231, 77, 60, 0.6);
+    padding: 5px;
+    display: inline-block;  
+    position: relative;
+    top: 2px;
+    left: 50px;
+    
+    border-radius: 50%;   
+}
+
+.experience-container .experience-icons .experience-circle .inside-circle{
+    color: rgba(231, 77, 60, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    height: 150px;
+    width: 150px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+     
+}
+
+.experience-container .experience-icons .experience-triangle{
+    
+ 
+   width: 0;
+   height: 0;
+   border-width: 0 150px 150px 150px;
+   border-color: transparent transparent #f1c40f transparent;
+   border-style:solid;
+   position: relative;
+   
+}
+ 
+
+ 
+
+.experience-container .experience-icons .inside-triangle{
+    width: 0;
+    height: 0;
+    border-width: 0 110px 110px 110px;
+    border-color: transparent transparent #dfe6e9 transparent;
+    border-style: solid;
+    position: absolute;
+    top: 24px;
+    left: -110px;
+  
+    
+    
+}
+
+.experience-container .experience-icons .text{
+     position: relative;
+     top: 68px;
+     left: -35px;
+     text-transform: uppercase;
+     font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 2.1rem;
+    color: #f1c40f;
+
+}
+
+
+
+.experience-container .experience-info{
+
+}
+
+.experience-container .experience-info .info-box{
+    padding: 15px 0;
+}
+
+.experience-container .experience-info .info-box h4{
+    color: #16171b;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.experience-container .experience-info .info-box .date{
+    color: #2980b9;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    display: block;
+}
+.experience-container .experience-info .info-box p{
+    color: rgb(153, 153, 153);
+    font-weight: 400;
+    font-size:  1rem;
+    line-height: 1.8rem;
+
+}
+
+/* Media Queries */
+
+/* tablets */
+
+@media only screen and (max-width: 960px) {
+    
+       
+    
+    .experience{
+        padding: 55px 0;
+        background: #fff;
+    }
+    .experience-container{
+        padding: 20px;
+    }
+    .experience-container .experience-icons .experience-square{
+        top:0;
+        left: 30px;
+        margin-bottom: 19px;
+    }
+
+    .experience-container .experience-icons .experience-circle{
+        margin-bottom: 20px;
+        left: 43px;
+    }
+    .experience-container .experience-info{
+        padding-right: 30px;
+    }
+
+    .experience-container .experience-icons .inside-triangle{
+        border-color: transparent transparent #fff transparent;
+    }
+}
+
+/* phones */
+
+@media only screen and (max-width: 767px) {
+    .experience .large-title{
+        font-size: 5rem;
+    }
+
+    .experience-container{
+        grid-template-columns: 1fr;
+    }
+    .experience-icons{
+        margin: 10px 0 25px 44px;
+    }
+    .experience-container .experience-info{
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .experience-container .experience-icons .experience-triangle{
+        left: -9px;
+    }
+   
+
+    
+    
+}
+ 
+
+
+
