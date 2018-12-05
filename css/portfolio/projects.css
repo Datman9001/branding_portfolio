@@ -45,6 +45,8 @@
 
     text-transform: capitalize;
     font-size: 1.4rem;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
     transition: all .2s;
   
 }
@@ -52,13 +54,19 @@
 .portfolio-projects .tech-info .tech-btn a:hover{
     background-color: #bdc3c7;  
     color: black;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.3); 
-    transform: translateY(-2px);
+    -webkit-box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+            box-shadow: 0 1rem 2rem rgba(0,0,0,.3); 
+    -webkit-transform: translateY(-2px); 
+        -ms-transform: translateY(-2px); 
+            transform: translateY(-2px);
    
 }
 .portfolio-projects .tech-info .tech-btn a:active{
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
-    transform: translateY(0);
+    -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
         }
 
 
@@ -97,10 +105,14 @@
 
 
 .portfolio-projects .technologies .tech-icons .icon{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 15px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     justify-items: center;
 }
 
@@ -110,5 +122,4 @@
     height: 150px;
     
 }
-
 

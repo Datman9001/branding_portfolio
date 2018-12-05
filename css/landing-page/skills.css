@@ -7,9 +7,15 @@
     position: relative;
     width: 200px;
     height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 auto;
 
 }
@@ -40,7 +46,9 @@
 }
 
 .skills-container{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
     
@@ -48,6 +56,8 @@
 
 .skills-container .box{
    /* background:  rgb(238, 238, 238, 0); */
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     padding: 40px;
 }
@@ -57,8 +67,10 @@
 }
 
 .skills-container .box:hover{
-    background: rgba(255, 255, 255);
-   box-shadow: 0px 14px 32px -1px rgba(0,0,0,0.75);
+     background: rgb(255, 255, 255);
+      
+   -webkit-box-shadow: 0px 14px 32px -1px rgba(0,0,0,0.75);
+           box-shadow: 0px 14px 32px -1px rgba(0,0,0,0.75);
    cursor: pointer;
     
 }
@@ -81,7 +93,7 @@
 }
 
 .skills-container .box h3{
-    font-size: 1,6rem;
+    font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -92,7 +104,7 @@
 
 .skills-container .box p{
     color: #999999;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     line-height: 15px;
 }
 
@@ -119,6 +131,7 @@
         margin-bottom: 1rem;
     } 
     .skills-container{
+        -ms-grid-columns: 100%;
         grid-template-columns: 100%;
         text-align: center;
     }
@@ -128,8 +141,9 @@
     }
 
     .skills-container .box{
-        background: rgba(255, 255, 255);
-       box-shadow: 0px 14px 32px -1px rgba(0,0,0,0.75);
+        background: rgb(255, 255, 255);
+       -webkit-box-shadow: 0px 14px 32px -1px rgba(0,0,0,0.75);
+               box-shadow: 0px 14px 32px -1px rgba(0,0,0,0.75);
        margin: 10px 0;
        
         
@@ -158,6 +172,7 @@
         margin-bottom: 1rem;
     } 
     .skills-container{
+        -ms-grid-columns: 100%;
         grid-template-columns: 100%;
         text-align: center;
     }
